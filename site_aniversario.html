@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feliz Aniversário 🎉</title>
+  <style>
+    :root{--bg:#fff;--card:#f7f9fc;--accent:#ff4d6d;--text:#0b1a2b}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Arial; background:linear-gradient(180deg,#ffe0e9 0%, #ffffff 100%);color:var(--text)}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{width:100%;max-width:980px;background:var(--card);border-radius:20px;box-shadow:0 12px 35px rgba(12,20,40,.1);padding:20px}
+    .center{display:flex;align-items:center;justify-content:center}
+
+    #startBtn{appearance:none;border:0;background:linear-gradient(90deg,var(--accent),#e6004c);color:#fff;padding:18px 28px;border-radius:14px;font-size:20px;font-weight:600;cursor:pointer;box-shadow:0 10px 25px rgba(255,77,109,.3);transition:.3s}
+    #startBtn:hover{transform:scale(1.05)}
+
+    #main{display:none;animation:fadeIn .5s ease both}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+
+    header{display:flex;flex-direction:row;align-items:center;gap:16px}
+    .logo{width:84px;height:84px;border-radius:16px;background:linear-gradient(135deg,#ffe7f0,#ffd7a6);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px}
+    h1{margin:0;font-size:30px;color:var(--accent)}
+    p.lead{margin:6px 0 0;color:#334155;font-size:18px}
+
+    .text-block{background:#fff;padding:18px;border-radius:14px;margin-top:18px;line-height:1.6;font-size:18px}
+
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:14px}
+    .gallery img{width:100%;height:100%;border-radius:12px;object-fit:cover;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,.6);display:none;align-items:center;justify-content:center;padding:18px}
+    .modal .inner{max-width:920px;width:100%;background:#fff;border-radius:12px;padding:14px}
+    .modal img{width:100%;height:auto;border-radius:8px}
+
+    footer{margin-top:18px;color:#475569;font-size:13px;text-align:center}
+
+    @media(min-width:720px){h1{font-size:36px}}
+
+    button:focus,input:focus{outline:3px solid rgba(255,77,109,.4);outline-offset:3px}
+    .large-text{font-size:20px}
+  </style>
+</head>
+<body>
+  <!-- VLibras -->
+  <div vw class="enabled"> <div vw-access-button class="vw-access-button"></div> <div vw-plugin-wrapper></div> </div>
+
+  <div class="wrap">
+    <div class="card" role="main" aria-labelledby="titulo">
+
+      <div id="intro" class="center" style="flex-direction:column;gap:14px">
+        <div class="logo" aria-hidden="true">🎂</div>
+        <button id="startBtn">Clique aqui</button>
+        <div style="font-size:13px;color:#475569">Toque no botão para abrir a surpresa.</div>
+      </div>
+
+      <main id="main" aria-live="polite">
+        <header>
+          <div class="logo">🎉</div>
+          <div>
+            <h1 id="titulo">Feliz Aniversário, Giovanna!</h1>
+            <p class="lead">Este site é todo para você, feito com carinho.</p>
+          </div>
+        </header>
+
+        <section class="text-block large-text">
+          <p>Giovanna,</p>
+          <p>Hoje é um dia muito especial: o seu aniversário. Eu, Wesley, preparei este presente para que você sinta todo o carinho e a importância que tem na minha vida. Você é uma pessoa incrível, iluminada e merece tudo de melhor.</p>
+          <p>Obrigado pelos momentos que compartilhamos, pelas memórias que já temos e por todos os que ainda vamos viver. Desejo que sua vida seja cheia de alegrias, saúde e conquistas. Que cada novo ano traga ainda mais motivos para sorrir.</p>
+          <p>Parabéns, Giovanna! 💖</p>
+          <p>Com carinho,<br>Wesley</p>
+        </section>
+
+        <section class="text-block">
+          <strong>Momentos Peak kkkk</strong>
+          <div class="gallery">
+            <!-- Adicione suas imagens aqui -->
+            <img src="./Peak 1.png" alt="Foto Especial">
+            <img src="./Peak 2.png" alt="Foto Especial">
+            <img src="./Peak 3.png" alt="Foto Especial">
+            <img src="./Peak 4.png" alt="Foto Especial">
+          </div>
+        </section>
+
+        <section class="text-block">
+          <strong>Seus Personagens</strong>
+          <div class="gallery">
+            <!-- Adicione suas imagens aqui -->
+            <img src="./Aya.png" alt="Foto Especial">
+            <img src="./Iyo (Favorito).png" alt="Foto Especial">
+            <img src="./Kyria.png" alt="Foto Especial">
+            <img src="./Lyra.png" alt="Foto Especial">
+          </div>
+        </section>
+
+        <section class="text-block">
+          <strong>Kridell E Kyria</strong>
+          <div class="gallery">
+            <!-- Adicione suas imagens aqui -->
+            <img src="./Kridell e Kyria 1.png" alt="Foto Especial">
+            <img src="./Kridell e Kyria 2.png" alt="Foto Especial">
+          </div>
+          <p>Será que da certo esse casal?</p>
+        </section>
+
+        <section class="text-block">
+          <strong>May e Luci</strong>
+          <div class="gallery">
+            <!-- Adicione suas imagens aqui -->
+            <img src="./Adrien E Mayumi.png" alt="Foto Especial">
+            <img src="./Adrien e Mayumi 2.png" alt="Foto Especial">
+            <img src="./Adrien e Mayumi 3.png" alt="Foto Especial">
+            <img src="./Mayumi 1.png" alt="Foto Especial">
+            <img src="./Mayumi 2.png" alt="Foto Especial">
+          </div>
+        </section>
+        <br><br><br>
+        <h1>Agora a mais bela....</h1>
+
+        <section class="text-block">
+          <strong>Giih ❤️</strong>
+          <div class="gallery">
+            <!-- Adicione suas imagens aqui -->
+            <img src="./Giih 1.jpg" alt="Foto Especial">
+            <img src="./Giih 2.png" alt="Foto Especial">
+            <img src="./Giih 3.png" alt="Foto Especial">
+          </div>
+        </section>
+
+        <footer>
+          <div>Site criado com muito carinho, como presente de aniversário para Giovanna.</div>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true">
+    <div class="inner">
+      <button id="closeModal" class="btn" style="float:right">Fechar</button>
+      <img id="modalImg" alt="Imagem ampliada">
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+
+  <script>
+    const startBtn=document.getElementById('startBtn');
+    const intro=document.getElementById('intro');
+    const main=document.getElementById('main');
+    const modal=document.getElementById('modal');
+    const modalImg=document.getElementById('modalImg');
+    const closeModal=document.getElementById('closeModal');
+    const gallery=document.querySelector('.gallery');
+
+    startBtn.addEventListener('click',()=>{intro.style.display='none';main.style.display='block';});
+
+    gallery.querySelectorAll('img').forEach(img=>{
+      img.addEventListener('click',()=>openModal(img.src));
+    });
+
+    function openModal(src){modalImg.src=src;modal.style.display='flex';closeModal.focus();}
+    closeModal.addEventListener('click',()=>{modal.style.display='none';modalImg.src='';});
+    modal.addEventListener('click',e=>{if(e.target===modal){modal.style.display='none';modalImg.src='';}});
+
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.style.display==='flex'){modal.style.display='none';modalImg.src='';}});
+  </script>
+</body>
+</html>
